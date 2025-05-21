@@ -1,0 +1,26 @@
+{
+  "name": "soccercentral.2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0",
+    "sqlite3": "^5.1.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usmank07/Soccer-Central.git"
+  },
+  "bugs": {
+    "url": "https://github.com/usmank07/Soccer-Central/issues"
+  },
+  "homepage": "https://github.com/usmank07/Soccer-Central#readme"
+}
