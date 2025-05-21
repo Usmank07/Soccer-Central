@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SoccerCentral Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <h1>SoccerCentral</h1>
+      </div>
+
+      <div id="leftcolumn">
+        <div id="navigation">
+          <ul>
+            <li><a href="index.html">&gt; Home</a></li>
+            <li><a href="AFixtures.html">&gt; All Fixtures</a></li>
+            <li><a href="TFixtures.html">&gt; Today's Fixtures</a></li>
+            <li><a href="TUpdates.html">&gt; Transfers</a></li>
+            <li><a href="quiz.html" class="active">&gt; Quiz</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="maincolumn">
+        <h2>Which Champions League team suits you best?</h2>
+        <form id="quizForm">
+          <!-- Q1: Jersey Color -->
+          <label for="favColor">1. Pick a jersey color:</label><br />
+          <select name="color" id="favColor" required>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="white">White</option>
+          </select>
+          <br /><br />
+
+          <!-- Q2: Play Style -->
+          <label>2. Play style:</label><br />
+          <input
+            type="radio"
+            name="style"
+            value="attacking"
+            id="atk"
+            required
+          />
+          <label for="atk">Attacking</label><br />
+          <input type="radio" name="style" value="defensive" id="def" />
+          <label for="def">Defensive</label><br /><br />
+
+          <!-- Q3: Favorite League -->
+          <label for="league">3. League:</label><br />
+          <select name="league" id="league" required>
+            <option value="premier">Premier League</option>
+            <option value="laliga">La Liga</option>
+            <option value="bundesliga">Bundesliga</option>
+          </select>
+          <br /><br />
+
+          <!-- Q4: Stadium Atmosphere -->
+          <label for="atmosphere">4. Atmosphere:</label><br />
+          <select name="atmosphere" id="atmosphere" required>
+            <option value="intense">Intense & Loud</option>
+            <option value="modern">Modern & High-Tech</option>
+          </select>
+          <br /><br />
+
+          <button type="submit">See Your Team</button>
+        </form>
+
+        <div id="result" style="margin-top: 1em; font-weight: bold"></div>
+      </div>
+
+      <div class="clear"></div>
+    </div>
+
+    <script src="Quiz.js"></script>
+  </body>
+</html>
